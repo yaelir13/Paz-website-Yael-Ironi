@@ -4,6 +4,10 @@
 
 body{
     margin:0;
+    direction: rtl; 
+    font-family: 'Arial (Hebrew)', Arial; 
+    padding-bottom: 38px; 
+    background: #fff
 }
 
 /*h1{
@@ -14,29 +18,62 @@ body{
     width:100%;
     margin:0;
 }*/
-.navbar {
+
+.header {
     width:100%;
     text-align: center;
     direction:rtl;
-    font-family: Arial;
+    font-weight: bold;
     background: linear-gradient(to bottom, rgb(144,144,144) 0%,rgb(144,144,144) 81%,rgb(148,148,148) 87%,rgb(163,163,163) 93%,rgb(169,169,169) 97%,rgb(170,170,170) 100%);
-    
     height:105px;
     float:right;
     width:100%;
     margin:0;
 }
 
+.navbar{
+    width:900px;
+    height:auto;
+    margin:auto;
+    padding-right: 140px;
+}
 .navbar a {
-    display:inline-block;
-    font-size: 14px;
-    padding-top:72px;
+    float:left;
+    font-size: 15px;
+    margin-top:72px;
     color:white;
     text-align: center;
     text-decoration: none;
     }
 
-.nav-separator{
+.home{
+    float:right;
+}
+.header>.home a{
+    position:absolute;
+    top:72px;
+    right:340px;
+    width: 17px;
+    height:20px;
+    background: url(/images/images/menu_home.png) no-repeat 0 top;
+}
+
+#logo{
+    position:relative;
+}
+
+#logo>img{
+    position:absolute;
+    top:35px;
+    right:180px;
+    width: 142px;
+    height:93px;
+}
+.home a:hover{
+    color:#005CA0;
+}
+
+    .nav-separator{
       display:inline-block;
       width: 4px;
       height: 21px;
@@ -65,6 +102,7 @@ body{
     display: none;
     font-size:12px;
     position: absolute;
+    top:105px;
     background-color:#909090;
     min-width: 80px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -74,7 +112,7 @@ body{
     float: none;
     color: white;
     border: 0.5px solid white;
-    margin-top:5px;
+    margin-top:0px;
     padding:10px;
     text-decoration: none;
     display: block;
