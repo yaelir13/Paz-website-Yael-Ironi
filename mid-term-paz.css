@@ -7,17 +7,10 @@ body{
     direction: rtl; 
     font-family: 'Arial (Hebrew)', Arial; 
     padding-bottom: 38px; 
-    background: #fff
+    background: #fff;
+    overflow:hidden;
+    height:100vh;
 }
-
-/*h1{
-    background: linear-gradient(to bottom, rgb(144,144,144) 0%,rgb(144,144,144) 81%,rgb(148,148,148) 87%,rgb(163,163,163) 93%,rgb(169,169,169) 97%,rgb(170,170,170) 100%);
-    padding-top:80px;
-    height:105px;
-    float:right;
-    width:100%;
-    margin:0;
-}*/
 
 .header {
     width:100%;
@@ -126,4 +119,67 @@ body{
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+body>#first-row{
+    overflow:hidden;
+    width:900px;
+    margin: auto;
+    
+
+}
+.First-row-element{
+    width:291px;
+    height:355px;
+    float:right;
+    margin-top:30px;
+    position:relative;
+    border-bottom-right-radius: 20px;
+    margin-right: 9px;
+}
+
+.First-row-element img{
+    border-bottom-right-radius: 20px;
+}
+.element-text{
+    position:absolute;
+    left: 38px;
+    bottom: 8px;
+    background-color: rgba(125, 123, 122,0.8);
+    color:white;
+    text-align: right;
+    width: 248px;
+    height: 98px;
+    line-height:0.9em;
+    overflow: hidden;
+    padding: 10px;
+    
+    border-bottom-right-radius: 20px;
+    }
+
+.element-text h3{
+        font-size: 14px;
+        font-weight: bold;
+        margin:0;
+           }
+           
+.element-text p{
+    font-size: 13px;
+    margin-top: 4px;
+    margin-bottom:0px;
+}
+
+.element-text a{
+    font-size: 13px;
+    float: left;
+    color:white;
+    text-decoration:none;
+    padding-left:12px;
+    background: url(/images/images/read_more_white.png) no-repeat left center;
+
+}
+
+.element-text a:hover{
+    color: #005CA0;
+    background: url(/images/images/read_more_yellow.png) no-repeat left center;
 }
