@@ -251,7 +251,7 @@ body>#first-row{
     background: url(images/images/small_cube_bg.png) no-repeat left center;
     }
 
-.Second-row-element img{
+.Second-row-element #toggle-image, .Second-row-element img{
     width:249px;
     float:left;
     margin:10px 21px;
