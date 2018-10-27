@@ -209,6 +209,8 @@ main>#first-row{
 }
 .First-row-element img, .First-row-right-element img{
     border-bottom-right-radius: 20px;
+    width:291px;
+    height:355px;
     z-index: -1 ;
     }
 
