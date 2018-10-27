@@ -19,23 +19,18 @@ body{
     font-weight: bold;
     background: linear-gradient(to bottom, rgb(144,144,144) 0%,rgb(144,144,144) 81%,rgb(148,148,148) 87%,rgb(163,163,163) 93%,rgb(169,169,169) 97%,rgb(170,170,170) 100%);
     height:105px;
-    float:right;
     width:100%;
     margin:0;
     }
 
-.header #searchfield, main {
+.centered-header, main {
         width:900px;
         margin:auto;
         height:auto;
-        overflow:hidden;
     }
  
-.search-string{
-    overflow:hidden;
-    }
 
-.header #searchfield .search-string a:first-child {
+.search-string a:first-child {
         float: left;
         width: 19px;
         height: 19px;
@@ -43,82 +38,85 @@ body{
         background: url(images/images/search_button.png) no-repeat 0 0;
     }
 
-.search-string .input #website-seasrch-field {
-        /*position: relative;
-        top: 2px;
-        right: 4px;*/
+.search-string #website-search-field {
         float:left;
-        width: 126px;
-        background: transparent;
+        width: 125px;
+        background: white;
+        height:19px;
         border: 0 none;
     }
 
-#website-search-field, .header #searchfield .search-string a:last-child {
+#website-search-field, .search-string a:last-child {
         font-family: Arial,Arial, Helvetica, sans-serif;
         font-size: 12px;
         float:left;
         margin-top:20px;
     }
 
-.header #searchfield .search-string a:last-child {
+.search-string a:last-child {
         color:white;
         margin-top:23px;
         margin-left:10px;
         font-weight: bold;
         text-decoration: none;
+        padding-right:540px;
         }
 
-.navbar{
+.clrearfix{
+    content: " ";
+    display:table;
+    clear:both;
+}
+
+nav , ul{
     width:900px;
     height:auto;
-    margin-right:390px;
-
+    margin: 0px auto;
+    padding:0;  
     }
 
+li{
+        max-width:160px;
+        padding:0px 3px;
+        float:right;
+    }
+.navbar{
+    margin:0;
+    height:93px;
+}
 .navbar a {
     float:left;
     font-size: 15px;
-    margin-top:32px;
+    margin-top:30px;
     color:white;
     text-align: center;
     text-decoration: none;
     }
 
-.home{
-    float:right;
-    margin-right:400px;
-    }
-
-.header>.home a{
-    position:absolute;
-    top:72px;
-    right:460px;
-    width: 17px;
-    height:20px;
-    background: url(images/images/menu_home.png) no-repeat 0 top;
-    }
-
 #logo{
-    position:relative;
-    }
+    margin-top:30px;
+    padding-top:0;
+    float:right;
+        }
+  
+#home a:hover{
+        color:#005CA0;
+        }
 
-#logo>img{
-    position:absolute;
-    right:310px;
-    width: 142px;
-    height:93px;
-    z-index:1;
-    }
-
-.home a:hover{
-    color:#005CA0;
+ul>#home{
+    float:right;
+    display:block;
+    width:19px;
+    height:19px;
+    margin-right:10px;
+   
     }
 
 .nav-separator{
     display:inline-block;
     width: 4px;
     height: 21px;
-    margin: 0 12px;
+    margin: 26px 12px;
     background: url(images/images/menu_sep.png) no-repeat 0 0px;
     }
 
@@ -131,7 +129,7 @@ body{
     text-align: center;  
     }
 
-.dropdown .button {
+.dropdown {
     font-size: 14px;
     border: none;
     outline: none;
@@ -144,11 +142,13 @@ body{
     display: none;
     font-size:12px;
     position: absolute;
-    top:105px;
+    top:75px;
+    padding-top: 30px;
     background-color:#909090;
     min-width: 80px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
      z-index:1;
+    
     }
 
 .dropdown-content a {
@@ -162,16 +162,21 @@ body{
     text-align: right;
     }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover{
     background-color:#BCBCBC;
     color: #005CA0;
+    display:block;
     }
 
 .dropdown:hover .dropdown-content {
     display: block;
     }
+
+main{
+    height:405px;
+}
     
-body>#first-row{
+main>#first-row{
     width:900px;
     margin: auto;
     z-index:-3;
@@ -186,14 +191,23 @@ body>#first-row{
 .First-row-element{
     width:291px;
     height:355px;
-    float:right;
-    margin-top:30px;
+    float:left;
+    margin-top:23px;
     position:relative;
     border-bottom-right-radius: 20px;
-    margin-right: 9px;
+    margin-right: 8px;
     }
 
-.First-row-element img{
+.First-row-right-element{
+    width:291px;
+    height:355px;
+    float:left;
+    margin-top:8px;
+    position:relative;
+    border-bottom-right-radius: 20px;
+    margin-right: 8px;
+}
+.First-row-element img, .First-row-right-element img{
     border-bottom-right-radius: 20px;
     z-index: -1 ;
     }
