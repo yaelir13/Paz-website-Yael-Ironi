@@ -88,6 +88,7 @@ li{
     float:left;
     font-size: 15px;
     margin-top:30px;
+    padding-bottom:23px;
     color:white;
     text-align: center;
     text-decoration: none;
@@ -142,8 +143,8 @@ ul>#home{
     display: none;
     font-size:12px;
     position: absolute;
+    margin-top:30px;
     top:75px;
-    padding-top: 30px;
     background-color:#909090;
     min-width: 80px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -160,12 +161,14 @@ ul>#home{
     text-decoration: none;
     display: block;
     text-align: right;
+    z-index:-2;
     }
 
 .dropdown-content a:hover{
     background-color:#BCBCBC;
     color: #005CA0;
     display:block;
+   
     }
 
 .dropdown:hover .dropdown-content {
